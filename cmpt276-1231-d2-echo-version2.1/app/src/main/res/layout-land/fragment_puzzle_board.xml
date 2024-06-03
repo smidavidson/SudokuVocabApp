@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <com.echo.wordsudoku.views.SudokuBoard
+        android:id="@+id/sudoku_board"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        custom:boardColor="?attr/colorOnSecondary"
+        custom:boardSize="9"
+        custom:boxHeight="3"
+        custom:boxWidth="3"
+        custom:cellFillColor="?attr/colorSecondaryVariant"
+        custom:cellsHighlightColor="?attr/colorSecondary"
+        custom:textColor="?attr/colorOnSecondary"
+        custom:immutableColor="?attr/colorPrimary"
+        custom:layout_constraintEnd_toEndOf="parent"
+        custom:layout_constraintStart_toStartOf="parent"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintTop_toTopOf="parent"
+        ></com.echo.wordsudoku.views.SudokuBoard>
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

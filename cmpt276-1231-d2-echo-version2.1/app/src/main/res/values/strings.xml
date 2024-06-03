@@ -1,0 +1,125 @@
+<resources>
+
+    <!-- Main menu options -->
+    <string name="app_name">Word Sudoku</string>
+    <string name="menu_new_game_btn">New Game</string>
+    <string name="menu_load_game_btn">Load Saved Game</string>
+    <string name="menu_exit_btn">Exit</string>
+    <string name="menu_main_menu_btn">Main Menu</string>
+
+    <!-- Result messages -->
+    <string name="msg_fail">You lost! You made </string>
+    <string name="word_mistake_singular">mistake</string>
+    <string name="word_mistake_plural">mistakes</string>
+    <string name="msg_puzzle_timer"> This game took you </string>
+    <string name="word_seconds"> seconds</string>
+    <string name="msg_win">You won!</string>
+    <string name="retry_puzzle_btn">Retry Puzzle</string>
+    <string name="fail_msg">You Failed!</string>
+    <string name="confirm_msg">Confirm</string>
+
+    <!-- Options Menu -->
+    <string name="done_btn">Done</string>
+    <string name="game_rules_btn">Rules</string>
+    <string name="puzzle_dictionary_btn">Dictionary</string>
+    <string name="save_puzzle_btn">Save Puzzle</string>
+    <string name="reset_puzzle_btn">Reset</string>
+
+    <string name="preference_file_key">com.echo.wordsudoku.gameOptions</string>
+    <string name="puzzle_language_key">com.echo.wordsudoku.puzzleLanguageKey</string>
+    <string name="puzzle_difficulty_preference_key">com.echo.wordsudoku.puzzleDifficultyKey</string>
+    <string name="puzzle_timer_preference_key">com.echo.wordsudoku.puzzleTimerKey</string>
+    <string name="puzzle_autosave_preference_key">com.echo.wordsudoku.autosave</string>
+
+
+    <string name="RulesHeader">Word Sudoku Rules</string>
+    <string name="RulesText">When you start a new Word Sudoku game you will be presented with a square grid consisting of a number of cells.
+        For every row and column there must contain no repeating words. For every outlined sub-square, there must contain no repeating words\n<b>Hint:</b>
+If you encounter any difficulty translating the words featured in your puzzle, you can tap the dictionary button to see a table with the translation of all your puzzles featured words. But remember, you can only access this translation table twice per game!</string>
+    <string name="DictionaryHeader">Puzzle Dictionary</string>
+    <string name="DictionaryLimit">You have reached the maximum number of dictionary peeks for this puzzle. Sorry.</string>
+    <string name="peeks_Remaining">Peeks Remaining</string>
+
+
+    <!-- Destination Titles -->
+    <string name="destination_main_menu">Main Menu</string>
+    <string name="destination_puzzle">Puzzle</string>
+    <string name="destination_puzzle_result">Puzzle Result</string>
+    <string name="destination_choose_custom_words">Choose Custom Words</string>
+    <string name="destination_settings">Settings</string>
+    <string name="destination_choose_puzzle_mode">Choose Puzzle Mode</string>
+
+    <!-- Messages Preferences -->
+    <string name="difficulty_title">Set Puzzle Difficulty</string>
+
+    <!-- UI Immersion Preferences -->
+    <string name="ui_immersion_title">Set UI immersion</string>
+    <string name="french_immersion_on">French Immersion On</string>
+    <string name="french_immersion_off">French Immersion Off</string>
+    <string name="ui_immersion_header">French UI Immersion</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- Timer Preferences -->
+    <string name="set_timer_off">Timer is off</string>
+    <string name="set_timer_on">Timer is on</string>
+    <string name="timer_title">Time Puzzles</string>
+    <string name="timer_header">Puzzle Timer</string>
+
+    <!-- Difficulty Preferences -->
+    <string name="difficulty_header">Puzzle Difficulty</string>
+
+    <!-- AutoSave Preferences -->
+    <string name="auto_save_title">Auto Save</string>
+    <string name="auto_save_on">Auto Save is on (When app closes your progress will be saved)</string>
+    <string name="auto_save_off">Auto Save is off</string>
+
+
+    <string name="word_error">Error!</string>
+    <string name="save_game_error">Failed to save the game</string>
+    <string name="load_game_error">Failed to load the game</string>
+    <string name="word_entry_successful">Word entered successfully!</string>
+    <string name="error_no_cell_selected">No cell selected</string>
+    <string name="error_insert_in_initial_cell">You can not write in the puzzle initial cells</string>
+    <string name="error_not_filled_puzzle">You have not filled the puzzle!</string>
+    <string name="error_load_wordpair_database">Could not load the word pair database</string>
+
+
+    <!-- Choose mode -->
+    <string name="choose_mode_title">Classic Puzzle : A 9x9 puzzle with random words\nCustom Size: A puzzle with other sizes (4-12)\nCustom Words: A puzzle with your words.</string>
+    <string name="classic_puzzle">Classic Puzzle</string>
+    <string name="custom_size_puzzle">Custom Sized</string>
+    <string name="custom_words_puzzle">Custom Words</string>
+    <string name="error_enter_custom_words">Please enter custom words</string>
+
+
+    <!-- Choose size dialogue -->
+    <string name="choose_size_title">Choose Size</string>
+    <string name="option_4x4"> 4 x 4 </string>
+    <string name="option_6x6"> 6 x 6 </string>
+    <string name="option_9x9"> 9 x 9 </string>
+    <string name="option_12x12">12x12</string>
+    <string name="done_button">Done</string>
+    <string name="cancel_button">Cancel</string>
+
+
+    <!-- Change Language Immersion -->
+    <string name="msg_language_french">Restart required. Language changed to French</string>
+    <string name="msg_language_english">Redémarrage requis. Langue changée en anglais</string>
+
+    <!-- Save Game Dialog -->
+    <string name="save_game_dialog_title">Do you want to save the current puzzle?</string>
+    <string name="yes_button">Yes</string>
+    <string name="no_button">No</string>
+
+    <!-- Choose Custom Words -->
+    <string name="english_custom_words">English Words</string>
+    <string name="french_custom_words">French Words</string>
+    <string name="choose_custom_puzzle_size_custom">Select Custom Puzzle Size</string>
+    <string name="button_clear_custom_words">Clear</string>
+    <string name="error_custom_words_msg">Please fill in all entry boxes and ensure that words contain only characters!</string>
+    <string name="error">Error</string>
+    <string name="blank">blank</string>
+    <string name="ok">OK</string>
+
+
+</resources>

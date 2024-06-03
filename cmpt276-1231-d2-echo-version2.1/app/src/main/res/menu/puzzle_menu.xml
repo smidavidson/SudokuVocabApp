@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/options_finish_button"
+        android:title="@string/done_btn" />
+
+    <item
+        android:id="@+id/options_rules_button"
+        android:title="@string/game_rules_btn" />
+
+    <item
+        android:id="@+id/options_dictionary_help_button"
+        android:title="@string/puzzle_dictionary_btn" />
+
+    <item android:id="@+id/options_save_game_button"
+        android:title="@string/save_puzzle_btn" />
+
+    <item android:id="@+id/options_main_menu_button"
+        android:title="@string/menu_main_menu_btn" />
+
+    <item android:id="@+id/options_exit_button"
+        android:title="@string/menu_exit_btn" />
+</menu>

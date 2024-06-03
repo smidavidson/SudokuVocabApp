@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/puzzle_nav_graph"
+    app:startDestination="@id/mainMenuFragment">
+
+
+    <action
+        android:id="@+id/backToMainMenuAction"
+        app:popUpTo="@id/mainMenuFragment" />
+
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.echo.wordsudoku.ui.destinations.MainMenuFragment"
+        android:label="@string/destination_main_menu"
+        tools:layout="@layout/fragment_main_menu">
+        <action
+            android:id="@+id/startChoosePuzzleModeAction"
+            app:destination="@id/chooseCustomWordsFragment"/>
+        <action
+            android:id="@+id/loadPuzzleAction"
+            app:destination="@id/puzzleFragment"/>
+        <action
+            android:id="@+id/startSettingsAction"
+            app:destination="@id/settingsFragment"/>
+        <action
+            android:id="@+id/startCustomWordsAction"
+            app:destination="@id/chooseCustomWordsFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.echo.wordsudoku.ui.destinations.SettingsFragment"
+        android:label="@string/destination_settings" />
+
+    <fragment
+        android:id="@+id/chooseCustomWordsFragment"
+        android:name="com.echo.wordsudoku.ui.destinations.ChooseCustomWordsFragment"
+        android:label="@string/destination_choose_custom_words"
+        tools:layout="@layout/fragment_choose_custom_words">
+        <action
+            android:id="@+id/startCustomPuzzleAction"
+            app:destination="@id/puzzleFragment"/>
+    </fragment>
+    <fragment android:id="@+id/choosePuzzleModeFragment"
+        android:name="com.echo.wordsudoku.ui.destinations.ChoosePuzzleModeFragment"
+        android:label="@string/destination_choose_puzzle_mode"
+        tools:layout="@layout/fragment_choose_puzzle_mode">
+        <action
+            android:id="@+id/startPuzzleModeAction"
+            app:destination="@id/puzzleFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/puzzleFragment"
+        android:name="com.echo.wordsudoku.ui.destinations.PuzzleFragment"
+        android:label="@string/destination_puzzle"
+        tools:layout="@layout/fragment_puzzle">
+        <action
+            android:id="@+id/submitPuzzleAction"
+            app:destination="@id/puzzleResultFragment"
+            />
+        </fragment>
+        <fragment
+            android:id="@+id/puzzleResultFragment"
+            android:name="com.echo.wordsudoku.ui.destinations.PuzzleResultFragment"
+            android:label="@string/destination_puzzle_result"
+            tools:layout="@layout/fragment_puzzle_result">
+            <action
+                android:id="@+id/retryPuzzleAction"
+                app:destination="@id/puzzleFragment"
+                app:popUpTo="@id/puzzleFragment"
+                app:popUpToInclusive="true"/>
+        </fragment>
+
+
+</navigation>
